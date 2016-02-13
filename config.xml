@@ -6,10 +6,10 @@
         id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
-    <name>Chinpokomon</name>
+    <name>Shuffle </name>
 
     <description>
-        Chinpokomon le jeu de south park
+        ShuffleTrip, découvrez la France d'un nouvel oeil.
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
