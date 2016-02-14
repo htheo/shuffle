@@ -64,3 +64,11 @@ h1{
 .app{
     text-align: center;
 }
+.iconmenu{
+    color:white;
+    font-size:2em;
+    padding:0 20px 0 20px;
+    position: absolute;
+    bottom:5px;
+    width:80%;
+}
