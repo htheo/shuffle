@@ -83,3 +83,7 @@ h1{
     bottom:5px;
     width:90%;
 }
+
+.inconmenu a{
+    color:white !important;
+}
