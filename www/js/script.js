@@ -1,6 +1,6 @@
 /* système affichage  */ 
 
-function qsdf(elem){
+function changement(elem){
 
 
 	
