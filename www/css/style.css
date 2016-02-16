@@ -145,3 +145,14 @@ h1{
     bottom:5px;
     width:90%;
 }
+
+.iconmenu a{
+    color:white;
+}
+
+.iconmenu .fa-search{
+    float:right;
+}
+.iconmenu .fa-home{
+    float:left;
+}
