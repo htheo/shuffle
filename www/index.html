@@ -33,12 +33,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
-    <body>
+    <body ng-app="Shuffle">
         <div class="app">
 
             <!-- Pagge accueil !! -->
 
-            <div id="accueil">
+            <div id="accueil"  ng-controller="accueilCtrl">
                 <div class="buttonmain">
                     <div id="buttonshuffle"><img src="img/logo_appli.png" alt="logo shuflle trip découverte aléatoire d'un voyage">
                     <img onclick="changement('postSeul');return false;" class="tourner" src="img/logo_appl2i.png" alt="logo shuflle trip découverte aléatoire d'un voyage"></div>
@@ -52,20 +52,20 @@
 
             <!-- Pagge post seul !! -->
             
-            <div id="postSeul" >
+            <div id="postSeul" ng-controller="postCtrl">
                 Poste Seul
             </div>
 
             <!-- Template de tous les postes !! -->
             
-            <div id="posts">
+            <div id="posts" ng-controller="postsCtrl">
                 <!-- ng-repeat de tous les posts   -->
                 Tous les postes
             </div>
 
             <!-- Mon Compte !! -->
             
-            <div id="compte">
+            <div id="compte" ng-controller="compteCtrl">
                 Mon compte
             </div>
 
