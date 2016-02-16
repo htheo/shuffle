@@ -28,8 +28,11 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
         <link rel="stylesheet" type="text/css" href="css/css/font-awesome.css" />
         <title>Shuffle Trip</title>
+
+        <!--LINK CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
     </head>
@@ -53,7 +56,66 @@
             <!-- Pagge post seul !! -->
             
             <div id="postSeul" ng-controller="postCtrl">
-                Poste Seul
+
+                <!-- Début Feed Ville aléatoire-->
+                <div class="exp-feed">
+
+                    <!--Header du feed fix-->
+                    <div class="exp-head">
+                        <h2>Paris</h2>
+                    </div>
+
+                    <!-- Swiper -->
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Début d'une seule publication -->
+                            <div class="swiper-slide exp-single">
+                                <h3>Parc municipal</h3>
+                                <p>Paris compte plus de 3 000 hectares d'espaces verts, 490 jardins,
+                                    les bois de Boulogne et de Vincennes, sans compter les arbres le long des rues,
+                                    les décorations florales, les murs végétalisés, mais aussi les talus du boulevard périphérique.
+                                    Plus de 2 millions de végétaux sont produits chaque année
+                                    dans les centres de production horticole de Rungis, Achères, Thiais et Longchamp,
+                                </p>
+                                <img src="img/lac.jpg" alt="parc" class="img-responsive">
+                             </div>
+                            <!-- Fin publication -->
+
+                            <!-- Début d'une seule publication -->
+                            <div class="swiper-slide exp-single">
+                                <h3>Parc municipal</h3>
+                                <p>Paris compte plus de 3 000 hectares d'espaces verts, 490 jardins,
+                                    les bois de Boulogne et de Vincennes, sans compter les arbres le long des rues,
+                                    les décorations florales, les murs végétalisés, mais aussi les talus du boulevard périphérique.
+                                    Plus de 2 millions de végétaux sont produits chaque année
+                                    dans les centres de production horticole de Rungis, Achères, Thiais et Longchamp,
+                                </p>
+                                <img src="img/lac.jpg" alt="parc" class="img-responsive">
+                             </div>
+                            <!-- Fin publication -->
+
+                            <!-- Début d'une seule publication -->
+                            <div class="swiper-slide exp-single">
+                                <h3>Parc municipal</h3>
+                                <p>Paris compte plus de 3 000 hectares d'espaces verts, 490 jardins,
+                                    les bois de Boulogne et de Vincennes, sans compter les arbres le long des rues,
+                                    les décorations florales, les murs végétalisés, mais aussi les talus du boulevard périphérique.
+                                    Plus de 2 millions de végétaux sont produits chaque année
+                                    dans les centres de production horticole de Rungis, Achères, Thiais et Longchamp,
+                                </p>
+                                <img src="img/lac.jpg" alt="parc" class="img-responsive">
+                             </div>
+                        <!-- Fin publication -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!--fin swiper container-->
+
+                 </div>
+                <!-- Fin feed ville -->
+
             </div>
 
             <!-- Template de tous les postes !! -->
@@ -61,6 +123,9 @@
             <div id="posts" ng-controller="toutPostsCtrl">
                 <!-- ng-repeat de tous les posts   -->
                 Tous les postes
+                <div class="exp-feed">
+
+                </div>
             </div>
 
             <!-- Mon Compte !! -->
@@ -78,16 +143,22 @@
                     <a href='#' onclick="changement('compte'); return false"><i class="fa fa-user"></i>
                     </a>
                 </div>
-
-
-              <!--  <h1>PhoneGap</h1>
-                <div id="deviceready" class="blink">
-                    <p class="event listening">Connecting to Device</p>
-                    <p class="event received">Device is Ready</p>
-                </div>-->
             
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!--<script src="js/swiper.jquery.min.js"></script>-->
+
+        <script src="js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                spaceBetween: 30,
+            });
+        </script>
+
+
+        <script type="text/javascript" src="../platforms/ios/platform_www/cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript">

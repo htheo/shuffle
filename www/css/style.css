@@ -31,6 +31,9 @@ h1{
 
 /*   menu   */
 
+/* Image Reponsive */
+
+/*Page exploration*/
 
 
 
@@ -156,3 +159,63 @@ h1{
 .iconmenu .fa-home{
     float:left;
 }
+
+/* Image Responsive */
+
+.img-responsive{
+    max-width:100%;
+}
+
+/* Page Exploration */
+
+.exp-feed{
+    background:white;
+    padding-top:50px;
+    width:auto;
+    height:100%;
+}
+
+.exp-feed h2{
+    font-family: Olivier, sans-serif;
+    font-size:3em;
+    position:relative;
+}
+.exp-head{
+    height:50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:0;
+}
+.exp-head h2{
+    margin-top:10px;
+
+}
+.exp-single{
+    text-align: justify;
+    float:left;
+    height: 100% !important;
+}
+
+.swiper-container {
+    margin: 20px auto;
+}
+/*
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    !* Center slide text vertically *!
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}*/
