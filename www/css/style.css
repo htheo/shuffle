@@ -20,11 +20,46 @@ body{
 h1{
     font-size:1.2em;
 }
+
+/* ------------------      SOMMAIRE         ---------------------    */
+
+/* système affichage  */
+
 /* The animation code */
+
+/* The element to apply the animation to */
+
+/*   menu   */
+
+
+
+
+
+/* ------------------      DEBUT CSS         ---------------------    */
+
+/*  système d'affichage  */
+
+#accueil {
+
+}
+#postSeul {
+    display:none;
+}
+#posts {
+    display: none;
+}
+#compte {
+    display: none;
+}
+
+
+/* The animation code */
+
 @keyframes rotation_btn {
     from {}
 
-    50% { -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    60% { -webkit-transform: rotate(360deg); transform:rotate(360deg);}
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);}
 
 }
 
@@ -46,9 +81,9 @@ h1{
 }
 .tourner {
     animation-name: rotation_btn;
-    animation-duration: 8s;
+    animation-duration: 5s;
 
-    animation-iteration-count: 3;
+    animation-iteration-count: 8;
 }
 
 #buttonshuffle{
@@ -99,6 +134,9 @@ h1{
    
     color: rgba(255,255,255,0.8);
 }
+
+
+/*   menu   */
 .iconmenu{
     color:white;
     font-size:2em;
